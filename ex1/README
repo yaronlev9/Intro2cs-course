@@ -1,0 +1,37 @@
+yaronlev9
+31514823
+yaron levi
+
+exc3 review:
+1)program named "input list" that asks the user for a string and returns a list of the string given.
+2)program named "concat list" takes a list and returns a string with a concetation of the parameters in the list.
+3)program named "maximum" that takes a list of numbers and returns the maximum.
+4)program named "cyclic" that recieves two lists and returns true if the first list 
+is a cyclic permutation of the second list.
+5)program named "seven boom" that recieves an integer and returns a list from 1 to the integer 
+with all the numbers divided by seven or have seven in them are replaced with the word boom.
+6)program named "histogram" that recieves an integer and a list fo numbers and returns the histogram.
+7)program named "prime factors" that recieves an integer and returns a list of all the prime factors that it contains.
+8)program named "cartesian" that recieves two lists and returns the cartesian multiplication.
+9)program named "pairs" that recives a list of integers and anumber 
+and returns all the pairs which their sum equals the number.
+10)program named "test" which tests the program maximun using 4 simple tests.
+
+program no' 10 explanation:
+i chose (1,1,2,2) to check if it is successful when there are 2 maximum numbers.
+i chose (0,0,0,0) to check if it is successful if all the numbers are equal.
+i chose (1,2,3,4) to see if the program is successful when there is a definitive max.
+i chose (4,3,2,1) to see if the program is suucessful no matter what is the index of the max number.
+
+part e)
+1)i will get an error because the program is looking for class list and not int.
+2)i will get -1 because its the highest number.
+3)i will get an error because python cant compare an int with string.
+4)i will get [0,1,1] because there are 0 times 0, 1 time 1, and 1 time ,2,
+5)i will get and empty list because the loop starts at 2 so append will not work 
+on the empty list so the list will stay empty.
+6)i will get 4 pairs of [2,0] the program deletes all the opposite pairs but in the input the parameters 
+repeat itself so i get 4 pairs of the same thing. 
+ 
+
+
