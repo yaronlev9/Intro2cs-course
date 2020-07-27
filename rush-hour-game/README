@@ -1,0 +1,60 @@
+yaronlev9
+315148239
+yaron levi
+
+ex9 review:
+class Car:
+a class that makes the objects of the cars with their attributes (name, length,location and orientation) and
+includes the following methods:
+1)__init__(self, name, length, location, orientation): this method is the constructor of the objects
+in the class (the cars) and gives them their attributes.
+2)car_coordinates(self): this method returns the coordinates of a specific car.
+3)possible_moves(self): this method return all the possible moves the car can make depends on orientation.
+4)movement_requirements(self, movekey): this method returns a list of the coordinate that need to be empty for the car
+to move in the direction given.
+5)move(self, movekey): this method updates the location of a car to a new location depends on the direction given.
+6)get_name(self): this method returns the name of the car.
+
+Class Board:
+a class that makes the objects of the board with it's attributes (height,width,car_lst) and includes the
+following methods:
+1) __init__(self): this methods is the constructor of the objects in the class (the board)
+and gives them their attributes.
+2)__str__(self): this method prints the board.
+3)cell_list(self): this  method returns a list with all the coordinates the board has including the winning coordinate.
+4)filled_cells(self): this methods checks all the coordinates that the car occupy and returns the a list of the
+coordinates that are occupied on the board.
+5)possible_moves(self): this function returns all the possible moves that each car can make depends on the car
+orientation and if other cars block their move.
+6)target_location(self): this method returns the coordinate that the car needs to get to in order to win.
+7)cell_content(self, coordinate): this method checks if the coordinate given is empty returns None if empty
+and if its occupied it returns the name of the car that occupies it.
+8)add_car(self, car): this method adds a new car to the board.
+9)move_car(self, name, movekey): this method recienes a name of a car and a direction and if possible moves
+the car on the direction and returns true, if not returns false.
+
+Class Game:
+a class that makes the objects of the game with its attributes (board) and include the folliwing methods:
+1) __init__(self, board): this method is the constructor of the objects in the class (the game)
+and gives them their attributes.
+2)__single_turn(self): this method runs a single turn, it prints the user the moves that are possible
+and asks the user for a move, if the move is valid it makes the move and prints the board, if not
+returns an error.
+3)play(self): this method runs the game and while the winning coordinate is empty the game continues
+when a car enters the winning coordinate it prints a winning message and return None
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
