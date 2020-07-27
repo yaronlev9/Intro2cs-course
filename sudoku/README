@@ -1,0 +1,53 @@
+yaronlev9
+315148239
+yaron levi
+
+ex8 review:
+part 1:
+solve_sudoku(board): this function solves a sudoku board and returns true if the board 
+can be solved or false if it can't be solved.
+in order to solve the sudoku board i used the folliwng functions:
+1)solve_sudoku_helper(board): this function recieves a board, and fills every empty place on the board with a number 
+while following the rules of sudoku untill all the board is filled.
+
+2)find_empty_location(board, pointer): this function recieves a board and looks for an empty spot on the board 
+if it finds it returns true and updates the pointer if not than return false.
+
+3)legal_placement(num,row,col,board): this function recieves the board and an index to an empty spot and a number, 
+returns false if the number is found in the square of the index 
+or the row and col of the index given, if not returns true, this funtion uses the following functions:
+3.1)check_num_in_square(num,row,col,board,root_n): this function checks if the num given is already inside 
+the square of the index given and returns true if the 
+num is found, if not returns false.
+3.2)check_num_in_col(num,row,col,board): this function checks if the num given 
+is found in the same col of the index given.
+
+part 2:
+1)print_k_subsets(n,k): this function prints all sub groups size k from 0 to n-1, 
+this function uses the following function:
+1.2)print_k_subsets_helper(lst,k,pointer): this function prints all sub groups size k from 0 to n-1.
+1.3)make_lst_from_string(pointer): this function recieves a string and returns a list of all subgroups.
+
+2)fill_k_subsets(n,k,lst): this function makes a list with all sub groups size k from 0 to n-1, 
+this function uses the folliwng function:
+2.1)fill_k_subsets_helper(lst_n,k,pointer,lst): this function makes a list with all sub groups size k from 0 to n-1.
+
+3)return_k_subsets(n,k): this function gets a list and returns a new list with all sub groups size k from 0 to n-1, 
+this function uses the following function:
+3.1)return_k_subsets_helper(n,k): this function makes a list of sub groups from 0 to n-1
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
