@@ -1,0 +1,50 @@
+adamonso,yaronlev9
+Adam Monsonego
+Yaron Levi
+
+README for ex6:
+*this exercise contains the following files:
+1.wave_editor.py
+2.README
+3.AUTHORS
+
+Division to functions:
+program named 'wave editor' that edits and changes "wav" files and also composes music.
+The program has different menus in which the user can navigate through the different options:
+1)main_menu: a function that asks the user to choose between 3 different menus or to exit the program.
+
+2)change_wav_menu: this function asks the user for a file and offers him 6 options
+  to change the file. this function points the user to 6 more functions:
+1)revers_audio: this function reverses the audio in the given file.
+2)speedup_audio: this function speeds up the audio twice the initial speed.
+3)slowdown_audio: this function slows down the audio twice the initial speed.
+ this function uses the following function:
+ make_avg_lst: this function receives a list and returns a list
+ of the average values of each speaker.
+4)volume_up: this function moves the volume up by 1.2.
+5)volume_down: this function moves the volume down by 1.2.
+6)muffle_filter: this function muffles the audio sound.
+
+3)merge_wav_menu: this function asks the user for 2 audio files checks
+ if they exist and the point to the following function:
+1)merge_files: this function merges 2 audio files and returns a new audio file.
+ this function uses the following functions:
+1)merge_equal_rates: this function receives 2 audio file with
+ the same sample rate and returns a merged audio file.
+2)GCD: this function returns the highest integer that divides two numbers.
+3)convert_high_rate_data: this function receives the samples of the audio file
+ with the largest sample rate and returns a new audio file that has the same
+ rate as the second audio file.
+
+4)compose_wav_menu: this function receives a 'txt' file from the user.
+ this function uses the following functions:
+1)make_easy_list: this function returns a list of lists, each item holds
+ a note and how many times it should be played.
+2)compose_audio: this function returns a list of samples calculated using
+ the notes and the number of times they should be played.
+
+5)transfer_menu: this function asks the user if he wants to save
+ the new audio file or to change it.
+
+in addition, the function 'average' appears in the functions above it
+ returns the average number between the given numbers.
