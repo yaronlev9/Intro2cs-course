@@ -1,0 +1,77 @@
+yaron levi
+
+ex7 review:
+1)print_to_n(n): this function prints all ints fron 1 to n in a down order.
+
+2)print_reversed(n): this function prints all ints fron n to 1 in an up order.
+3)is_prime(n): this function checks if a number is prime, for this function i used the following function: 
+3.1)has_divisor_smaller_than(n,i): this function checks if the 2 ints given are divided without a remainder.
+
+4)exp_n_x(n,x): this function calculates the taylor column of exponent(x) from 0 to n, 
+for the use of this function i used the following functions:
+4.1)exp_n_x_helper(x,i):  this function sums the taylor column of exponent(x).
+4.2)factorial(n):this function calculates the factorial of n.
+
+5)play_hanoi(hanoi,n,src,dest,temp):this function solves the game of hanoi with n disks.
+6)print_sequences(char_list,n): this function recievs a list of chars and a number and calls the following function:
+6.1)print_sequences_helper(char_list,n,pointer): this function prints all the words in length n with the chars 
+in the list given.
+7)print_no_repetition_sequences(char_list,n): this function recievs a list of chars and a number 
+and calls the following function:
+7.1)print_no_repetition_sequences_helper(char_list,n,pointer): this function prints all the words 
+in length n with the chars in the list given
+every char is shown once in the word.
+8)parentheses(n): this function checks if the input is correct and returns all the combinations of parentheses 
+in n pairs, for this function i used the following function:
+8.1)parentheses_helper(str, pointer, n, num_left, num_right,lst): this function returns 
+all the combinations of parentheses in n pairs.
+9)up_and_right(n,k): this function checks if the input is correct and returns 
+all the paths from(0,0) to (n,k), in this function i used the following function:
+9.1)up_and_right_helper(n,k,moves,pointer): this function returns all the paths possible 
+from (0,0) to (n,k).
+10)flood_fill(image,start): this function checks if the input is correct recieves a position on a matrix 
+and fills all the empty places that are within reach of the position, 
+for this function i used the following function:
+10.1)flood_fill_helper(image,pointer1,pointer2): this function recieves a position on a matrix 
+and fills all the empty places 
+that are within reach of the position.
+
+part 3:
+1)the worst case running time of the function is_prime(n) (when n is prime)  is O(n)
+because it runs recursively from n to 1, which means the function runs n number of times.  
+2)to calculate the running time of the function print_no_repetition_sequences(char_list,n)
+i marked the length of char_list with the letter m, so the running time is O(m**n),
+because every time the function starts it enters a loop that does m iterations and
+the number of times i start the function is n (from n to n-1). so in total i make
+(m*m*m..) n number of times so O(m**n).
+3) to calculate the worst case running time of flood_fill(image,start) (when all the indexes are empty)
+i marked the number of rows with the letter n, and the number of columns with the letter m,
+so the running time is O(m*n) because for every empty index in the matrix the function looks
+for the next empty index and runs again untill no more indexes are found, so for
+the worst case when all the indexes are empty the function runs aprroximately (m-)1*(n-1)
+times which is the number of empty index (approximately) so the running time is O(m*n).
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
