@@ -1,0 +1,54 @@
+yaronlev9
+315148239
+yaron levi
+
+ex11 review:
+class Node:
+a class that makes the objects of the Node with their attributes (data, positive_child and negative_child) and
+includes the following methods:
+1) __init__(self, data, pos=None, neg=None): this method is the constructor of the objects
+in the class (the nodes) and gives them their attributes.
+2)is_leaf(self): this method checks if the node given is a leaf.
+
+Class Record:
+a class that makes the objects of the Record with it's attributes (illness,symptoms) and includes the
+following methods:
+1) __init__(self,illness,symptoms): this methods is the constructor of the objects in the class (the record)
+and gives them their attributes.
+
+Class Diagnoser:
+a class that makes the objects of the tree with its attributes (root) and include the folliwing methods:
+1) __init__(self, root): this method is the constructor of the objects in the class (the tree)
+and gives them their attributes.
+2)diagnose(self, symptoms): this method recieves a list of symptoms and returns the illness that fits
+acoording to the symptoms given.
+3)diagnose_helper(self, root, symptoms):this method checks if the symptom in the root is in the list given if true
+moves to the positive child of the root if not moves to the negative childuntil it reaches to a
+leaf and returns the illness.
+4)calculate_success_rate(self, records): this method returns the success rate according to the number of times
+we found the correct illness divided by the number of illness we are given.
+5)all_illnesses(self):this method returns a list of all the illness on the leafs of the tree.
+6)all_illnesses_helper(self, root, illnesses):this method moves down the tree and checks if the root
+is a leaf if true adds it to a dictionary and returns the dictionary.
+7)most_rare_illness(self, records): this method recieves a list of objects each has an illness and symptoms
+and finds the illness that we found lesser times when we run the tree
+if there is an illness that is not found by ruuning the tree that it is the most rare illness.
+8)paths_to_illness(self, illness): this method returns a list of paths to get to a given illness.
+9)paths_to_illness_helper(self,root, illness,lst,temp_lst): this method recieves a root to start the run on the tree,
+an illness and 2 empty lists, runs on all the paths on the tree and if the path leads
+to the given illness it appends it to the lst and returns the lst.
+
+In addition there are following functions:
+1)parse_data(filepath): this function opens a txt file, every line in the file is a new object of class Record
+which has an illness and symptoms and returns alist of objects.
+2)build_tree(records, symptoms): this function builds a tree that every root is a symptom and a leaf is an illness.
+3)build_tree_symptoms_hepler(root, symptoms, pointer): this function returns a tree with all the symptoms given.
+4)build_tree_illnesses(root,records,symptoms): this function runs on all the records and calls the helper function.
+5)build_tree_illnesses_helper(root,record,symptoms): this function recieves a record and makes a leaf of the illness
+inside the record in the place where every symptom in the record answered true and all the other symptoms
+ answered false.
+6)sort_records(records): this function sorts the list given and if the some records have the same symptoms
+it puts at first the record with the illness that is most common.
+7)optimal_tree(records, symptoms, depth): this function returns the root of the tree with the combination of symptoms
+with the highest rate of success.
+
