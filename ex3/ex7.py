@@ -177,3 +177,26 @@ def flood_fill_helper(image,pointer1,pointer2):
             flood_fill_helper(image, pointer1, pointer2+1)
         if image[pointer1][pointer2-1]==EMPTY:
             flood_fill_helper(image, pointer1, pointer2-1)
+            
+def get_rep_subs(steps, dist):
+    result = []
+    cur = []
+    counter = 0
+    recurs(steps, dist, cur, result)
+    for i in result:
+        if sum(i) == dist:
+            counter += 1
+
+
+def recurs(steps, dist, cur, result):
+    if dist == 0:
+        temp = cur[:]
+        result.append(temp)
+        return
+    elif dist < 0:
+        return
+    for i in steps:
+        cur.append(i)
+        recurs(steps, dist - i, cur, result)
+        cur.pop()         
+  
